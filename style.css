@@ -1,0 +1,206 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4ff;
+    color: #0f172a;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    background-color: #fff;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.4;
+}
+
+.hero-text h1 span {
+    color: #3b82f6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
+.socials {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.socials a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(20%) sepia(10%) saturate(600%) hue-rotate(180deg);
+    transition: 0.3s;
+}
+
+.socials a:hover img {
+    filter: invert(41%) sepia(100%) saturate(1300%) hue-rotate(200deg);
+}
+.socials i {
+    color: #0f172a;
+    transition: color 0.3s;
+}
+
+.socials a:hover i {
+    color: #3b82f6;
+}
+
+
+/* Hero Image with Blob */
+.hero-image .blob {
+    width: 320px;
+    height: 320px;
+    background-color: #3b82f6;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+}
+/* Pengalaman PKL Section */
+.pkl-experience {
+    padding: 80px 100px;
+    background-color: #fff;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.pkl-experience h2 {
+    font-size: 36px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.pkl-experience p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.pkl-experience ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.pkl-experience ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+/* CV Section */
+.cv-section {
+    padding: 80px 100px;
+    background-color: #fff;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.cv-section h2 {
+    font-size: 36px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.cv-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.cv-section .btn {
+    padding: 12px 30px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cv-section .btn:hover {
+    background-color: #2563eb;
+}
